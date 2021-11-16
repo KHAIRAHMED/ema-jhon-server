@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 require('dotenv').config()
-const port = 5000
+const port = process.env.PORT || 5055
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
